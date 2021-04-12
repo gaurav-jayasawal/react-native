@@ -514,6 +514,7 @@ export type NativeProps = $ReadOnly<{|
   textShadowOffset?: ?$ReadOnly<{|width?: ?Double, height?: ?Double|}>,
   lineHeight?: ?Float,
   textTransform?: ?string,
+  androidId?: ?Int32,
   color?: ?Int32,
   letterSpacing?: ?Float,
   fontSize?: ?Float,

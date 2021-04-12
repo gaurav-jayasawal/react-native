@@ -137,6 +137,16 @@ public abstract class BaseViewManager<T extends View, C extends LayoutShadowNode
     ReactFindViewUtil.notifyViewRendered(view);
   }
 
+  @ReactProp(name = "androidId")
+  public void setAndroidId(@NonNull T view, int id) {
+    view.setId(R.id.testViewId);
+  }
+
+  @ReactProp(name = "labelFor")
+  public void setLabelFor(@NonNull T view, int id) {
+    view.setLabelFor(R.id.testViewId);
+  }
+
   @Override
   @ReactProp(name = ViewProps.ACCESSIBILITY_LABEL)
   public void setAccessibilityLabel(@NonNull T view, @Nullable String accessibilityLabel) {

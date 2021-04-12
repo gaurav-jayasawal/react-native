@@ -466,11 +466,15 @@ module.exports = ([
     title: 'Auto-focus',
     render: function(): React.Node {
       return (
-        <TextInput
-          autoFocus={true}
-          style={styles.default}
-          accessibilityLabel="I am the accessibility label for text input"
-        />
+        <View style={{backgroundColor: 'lightgreen'}}>
+          <Text labelFor={123}>This is the label</Text>
+          <TextInput
+            androidId={123}
+            autoFocus={true}
+            style={styles.default}
+            accessibilityLabel="I am the accessibility label for text input"
+          />
+        </View>
       );
     },
   },

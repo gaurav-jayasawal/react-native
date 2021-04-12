@@ -26,5 +26,7 @@
 
   <!--tag is used to store accessibilityValue tag -->
   <item type="id" name="accessibility_value"/>
+  
+  <item type="id" name="testViewId"/>
 
 </resources>

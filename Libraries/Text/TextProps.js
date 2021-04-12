@@ -145,6 +145,9 @@ export type TextProps = $ReadOnly<{|
    * See https://reactnative.dev/docs/text.html#selectable
    */
   selectable?: ?boolean,
+
+  labelFor?: ?number,
+
   style?: ?TextStyleProp,
 
   /**
